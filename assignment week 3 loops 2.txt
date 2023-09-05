@@ -1,0 +1,153 @@
+// assignment week 3 loops 2
+// question 1
+// output:
+// in while loop (unlimited times)
+// question 2
+// output:
+// Hello
+// Hello
+// Hello
+// question 3
+// output:
+// In for loop
+// In for loop      
+// In for loop
+// question 4
+// output:
+// 9 1
+// 8 2
+// 7 3
+// 6 4
+// 5 5
+// 4 6
+// question 5 
+// int num, digit, even_digit_sum = 0;
+
+//     // Input from the user
+//     cout << "Enter a number: ";
+//     cin >> num;
+
+//     // Loop to extract and sum even digits
+//     while (num > 0) {
+//         digit = num % 10;  // Get the last digit
+//         if (digit % 2 == 0) {
+//             even_digit_sum += digit;  // Add even digit to the sum
+//         }
+//         num /= 10;  // Remove the last digit from the number
+//     }
+
+//     // Print the sum of even digits
+//     cout << "Sum of even digits: " << even_digit_sum << endl;
+// output:
+// Enter a number: 4
+// 556
+// Sum of even digits: 10
+// question 6
+// int num, reverse = 0;
+
+//     // Input from the user
+//     cout << "Enter a number: ";
+//     cin >> num;
+
+//     int original = num;  // Store the original number for later
+
+//     // Reverse the number
+//     while (num > 0) {
+//         int digit = num % 10;
+//         reverse = reverse * 10 + digit;
+//         num /= 10;
+//     }
+
+//     // Calculate the sum of the original and reversed numbers
+//     int sum = original + reverse;
+
+//     // Print the sum
+//     cout << "Sum of " << original << " and its reverse " << reverse << " is: " << sum << endl;
+//     output:
+//     Enter a number: 1
+// 2
+// Sum of 12 and its reverse 21 is: 33
+// question 7
+// int n;
+//     long long factorial = 1;
+
+//     // Input from the user
+//     cout << "Enter the value of 'n': ";
+//     cin >> n;
+
+//     if (n < 0) {
+//         std::cout << "Factorial is not defined for negative numbers." << std::endl;
+//     } else {
+//         for (int i = 1; i <= n; ++i) {
+//             factorial *= i;  // Calculate factorial
+//             cout << "Factorial of " << i << " is: " << factorial << std::endl;
+//         }
+//     }
+// output:
+// Enter the value of 'n': 10
+// Factorial of 1 is: 1
+// Factorial of 2 is: 2
+// Factorial of 3 is: 6
+// Factorial of 4 is: 24
+// Factorial of 5 is: 120
+// Factorial of 6 is: 720
+// Factorial of 7 is: 5040
+// Factorial of 8 is: 40320
+// Factorial of 9 is: 362880
+// Factorial of 10 is: 3628800  
+// question 8
+//     int n;
+//     long long fib1 = 0, fib2 = 1, nextTerm;
+
+//     // Input from the user
+//     cout << "Enter the value of 'n': ";
+//     cin >> n;
+
+//     cout << "First " << n << " Fibonacci numbers:" << endl;
+
+//     for (int i = 0; i < n; ++i) {
+//         if (i == 0)
+//             nextTerm = fib1;
+//         else if (i == 1)
+//             nextTerm = fib2;
+//         else {
+//             nextTerm = fib1 + fib2;
+//             fib1 = fib2;
+//             fib2 = nextTerm;
+//         }
+//         cout << nextTerm << " ";
+//     }
+
+//     cout << std::endl;
+// output:
+// Enter the value of 'n': 10
+// First 10 Fibonacci numbers:       
+// 0 1 1 2 3 5 8 13 21 34
+// question 9
+// int num, original, remainder, result;
+    
+//     cout << "Armstrong numbers between 1 and 500:" << endl;
+
+//     for (num = 1; num <= 500; ++num) {
+//         original = num;
+//         result = 0;
+
+//         // Calculate the sum of cubes of each digit
+//         while (original != 0) {
+//             remainder = original % 10;
+//             result += std::pow(remainder, 3);
+//             original /= 10;
+//         }
+
+//         // Check if it's an Armstrong number
+//         if (result == num) {
+//             cout << num << endl;
+//         }
+//     }
+//     output:
+//     Armstrong numbers between 1 and 500:
+// 1
+// 153
+// 370
+// 371
+// 407
